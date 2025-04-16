@@ -1,5 +1,5 @@
 basic.forever(function () {
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+    music.play(music.stringPlayable("C C5 D B E G F G ", 500), music.PlaybackMode.LoopingInBackground)
     basic.showString("  I LOVE YOU")
     basic.showLeds(`
         . . . . .
@@ -97,6 +97,34 @@ basic.forever(function () {
         . # # # #
         . . . # .
         . . # . #
+        . . # . #
+        `)
+    basic.showLeds(`
+        # . # . #
+        . # # # .
+        . . # . .
+        . . # # .
+        . . # . #
+        `)
+    basic.showLeds(`
+        # . # . #
+        . # # # .
+        . . # . .
+        . # # . .
+        # . # . .
+        `)
+    basic.showLeds(`
+        # . . . .
+        # # # . .
+        # . . . .
+        # # . . .
+        # . # . .
+        `)
+    basic.showLeds(`
+        . . . . #
+        . . # # #
+        . . . . #
+        . . . # #
         . . # . #
         `)
     basic.showLeds(`
